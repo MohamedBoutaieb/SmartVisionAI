@@ -7,8 +7,16 @@
     left: 0rem;
     top: 0rem;
     height: 55px;
+
 }
 
+a img{
+    width:auto;
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 200px;
+}
 .navitem{
     float: left;
     display: block;

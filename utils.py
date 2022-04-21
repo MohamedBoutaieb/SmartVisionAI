@@ -21,9 +21,7 @@ def navbar_component():
     with open("assets/images/settings.png", "rb") as image_file:
         image_as_base64 = base64.b64encode(image_file.read())
 
-    navbar_items = """<div class="underline"></div>
-  <div class="underline"></div>
-  <div class="underline"></div>"""
+    navbar_items = """<div class="underline"></div>"""
     for key, value in NAVBAR_PATHS.items():
         navbar_items += (f'<a class="navitem" href="/?nav={value}">{key}</a>')
 
@@ -34,8 +32,8 @@ def navbar_component():
 
     component = rf'''
             <nav class="container navbar " id="navbar">
-                <img src="">
                 <ul class="navlist">
+                <a class="navitem" href="/?nav=home"><img src="https://github.com/MohamedBoutaieb/SmartVisionAI/blob/main/assets/images/icon.png?raw=true" ></a>
                 {navbar_items}
                 </ul>
                 <div class="dropdown" id="settingsDropDown">
