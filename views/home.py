@@ -7,7 +7,7 @@ def load_view():
     st.markdown("""
     <div class="container"> 
     <div class='cut-text' style = "position:center;">SmartVisionAI</div>
-    <h1>  “The Future begins with us” </h1> <br>
+    <h1 >  “The Future begins with us” </h1> <br>
     <p>SmartVisionAI is  an Artificial Intelligence-based solution  we provide to help detect potentially dangerous or illegal objects in within different luggage
      With robust & fast algorithms at its core, SmartVisionAI detects prohibited items in real-time from X-ray Baggage Scanner 
     </p>

@@ -34,6 +34,7 @@ def navbar_component():
 
     component = rf'''
             <nav class="container navbar " id="navbar">
+                <img src="">
                 <ul class="navlist">
                 {navbar_items}
                 </ul>

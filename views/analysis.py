@@ -34,3 +34,32 @@ def load_view():
         
         if st.button('Predict'):
             object_detection_image(img1, confThreshold, nmsThreshold)
+def object_detection_image(img1, confThreshold, nmsThreshold):
+
+        my_bar = st.progress(0)
+        model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt',force_reload=True)
+        model.conf = confThreshold/100
+        model.iou = nmsThreshold/100
+
+        my_bar.progress(20)
+
+        results = model([img1])
+
+        my_bar.progress(50)
+
+        df = results.pandas().xyxy[0][['name',"confidence"]]
+        df.columns=['Object Name','Confidence']
+
+        st.write(df)
+
+        st.subheader('Bar chart for confidence levels')
+        st.bar_chart(df[["Confidence"]])
+
+        my_bar.progress(80)
+
+        results.save(save_dir="./")
+        pred_img = results.imgs[0]
+    
+        st.image(pred_img, caption='Proccesed Image.')
+
+        my_bar.progress(100)   
