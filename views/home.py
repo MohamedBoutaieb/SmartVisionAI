@@ -22,9 +22,14 @@ def load_view():
     <li> 
     0.28 percent of times flight delay is caused by security delays (baggage scan) in 2017
     </li>
-    </ul> """
-    ,unsafe_allow_html=True)
-    st.image(image)
-    st.markdown("""</p>
-    </div>
+    </ul>
+    <img src="https://github.com/MohamedBoutaieb/SmartVisionAI/blob/main/assets/images/why.png?raw=true">
+    </p>
+    <br> 
+    <h2> To whom it may concern ? </h2>
+    <img src="https://github.com/MohamedBoutaieb/SmartVisionAI/blob/main/assets/images/whom.png?raw=true">
+    """,unsafe_allow_html=True)
+
+
+    st.markdown("""</div>
     """,unsafe_allow_html=True)

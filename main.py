@@ -13,7 +13,8 @@ def navigation():
         home.load_view()
     elif route == "about":
         about.load_view()
-    elif route == "analysis":
+    elif route == "obj_detection":
+       
         analysis.load_view()
     elif route == "options":
         options.load_view()

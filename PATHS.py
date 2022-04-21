@@ -1,7 +1,7 @@
 NAVBAR_PATHS = {
     'HOME':'home',
     'ABOUT': 'about',
-    'ANALYSIS': 'analysis'
+    'OBJECT DETECTION': 'obj_detection'
 }
 
 SETTINGS = {
