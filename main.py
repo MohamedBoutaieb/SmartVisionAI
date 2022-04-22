@@ -1,5 +1,5 @@
 import streamlit as st
-import utils as utl
+import utils_front as utl
 from views import home,about,analysis,options,configuration
 
 st.set_page_config(layout="wide", page_title='Navbar sample')
