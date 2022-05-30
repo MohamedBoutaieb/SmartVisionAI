@@ -5,6 +5,11 @@ from PIL import Image
 def load_view():
 
     st.markdown("""
+    <style>
+        .block-container{
+            padding: 0 !important;
+        }    
+    </style>
     <div class="container"> 
         <div class="hero">
             <div class="hero-content">
