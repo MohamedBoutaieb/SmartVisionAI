@@ -1,8 +1,45 @@
+.hero{
+    height: 90vh;
+    background-image: url("https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg");
+    /* background-color: crimson; */
+    background-size: cover;
+}
+.hero-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 20%;
+    color: white;
+}
+.hero-content p{
+    font-size: 24px;
+}
+.hero-content h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.why-section{
+    padding: 5vh 10vw;
+}
+.why-section p, .why-section li{
+    font-size: 24px;
+}
+.why-section-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-container{
+    padding: 0 !important;
+}
 .navbar{
     font-family: 'Trebuchet MS', sans-serif;
     position: fixed;
     width: 100%;
-    background: #353535;
     z-index: 99999999999999999999;
     left: 0rem;
     top: 0rem;
@@ -20,9 +57,9 @@ a img{
 .navitem{
     float: left;
     display: block;
-    color: #f2f2f2 !important;
+    color: rgb(49, 51, 63);
     text-align: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     text-decoration: none !important;
     border-bottom: 2px solid transparent;
     font-size: 14px;
@@ -30,8 +67,7 @@ a img{
 }
 
 .navitem:hover{
-    background-color: #333;
-    height: 55px !important;
+    background-color: rgba(0,0,0,0.2);
 }
 
 
@@ -108,7 +144,7 @@ iframe{
 
 .container{
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .container .cut-text {
