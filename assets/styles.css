@@ -1,15 +1,81 @@
-.navbar{
-    font-family: 'Trebuchet MS', sans-serif;
-    position: fixed;
+.hero{
+    height: 90vh;
+    background-image: url("https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg");
+    /* background-color: crimson; */
+    background-size: cover;
+}
+.hero-content{
     width: 100%;
-    background: #353535;
-    z-index: 99999999999999999999;
-    left: 0rem;
-    top: 0rem;
-    height: 55px;
-
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 20%;
+    color: white;
+}
+.hero-content p{
+    font-size: 24px;
+}
+.hero-content h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+.why-section{
+    padding: 5vh 10vw;
+}
+.why-section p, .why-section li{
+    font-size: 24px;
+}
+.why-section-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-container{
+    /* padding: 0 !important; */
+}
+
+
+.industries-section{
+    background-color: #efae16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+.industries-section h1{
+    color: white;
+}
+.industries-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    gap: 50px;
+}
+.grid-item {
+    width: 250px;
+    height: 250px;
+    transition: 200ms;
+}
+.grid-item:hover{
+    box-shadow: 5px 10px 32px rgba(0,0,0,0.5);
+}
+
+.who-section{
+    padding: 5vh 10vw;
+}
+.who-section img{
+    width: 100%;
+    height: 100%;
+}
+.grid-item img{
+    width: 100%;
+    height: 100%;
+}
 a img{
     width:auto;
     height: auto;
@@ -17,21 +83,33 @@ a img{
     max-height: 72px;
     max-width: 200px;
 }
+
+.navbar{
+    font-family: 'Trebuchet MS', sans-serif;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 99999999999999999999;
+    left: 0rem;
+    top: 0rem;
+    padding: 24px 24px;
+    
+}
 .navitem{
     float: left;
     display: block;
-    color: #f2f2f2 !important;
     text-align: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     text-decoration: none !important;
     border-bottom: 2px solid transparent;
     font-size: 14px;
     font-family: 'Trebuchet MS', sans-serif;
+
+    color: rgb(41, 3, 3) !important;
 }
 
 .navitem:hover{
-    background-color: #333;
-    height: 55px !important;
+    background-color: rgba(0,0,0,0.2);
 }
 
 
@@ -108,7 +186,7 @@ iframe{
 
 .container{
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .container .cut-text {
@@ -141,3 +219,6 @@ iframe{
 }
 
   
+.page-padding{
+    padding: 10vh 5vw;
+}
