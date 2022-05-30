@@ -1,9 +1,9 @@
 import streamlit as st
 from PIL import Image
 
+
 def load_view():
-    image = Image.open('./assets/images/why.png')
-   
+
     st.markdown("""
     <div class="container"> 
         <div class="hero">
@@ -41,14 +41,32 @@ def load_view():
                 <img src="https://github.com/MohamedBoutaieb/SmartVisionAI/blob/main/assets/images/why.png?raw=true">
             </div>
         </div>
-        <div>
+        <div class="industries-section">
             <h1>INDUSTRIES</h1>
             <div class="industries-grid">
                 <div class="grid-item">
-                    <img src="./assets/images/airport.png">
+                    <img src="https://www.baggageai.com/assets/images/industry/airport.png">
+                </div> 
+                <div class="grid-item">
+                    <img src="https://www.baggageai.com/assets/images/industry/malls-and-parcel.png">
+                </div> 
+                <div class="grid-item">
+                    <img src="https://www.baggageai.com/assets/images/industry/metros-railways.png">
+                </div> 
+                <div class="grid-item">
+                    <img src="https://www.baggageai.com/assets/images/industry/stadiums-events.png">
+                </div> 
+                <div class="grid-item">
+                    <img src="https://www.baggageai.com/assets/images/industry/prison.png">
+                </div> 
+                <div class="grid-item">
+                    <img src="https://www.baggageai.com/assets/images/industry/schools.png">
                 </div> 
             </div>
         </div>
-        <img src="https://github.com/MohamedBoutaieb/SmartVisionAI/blob/main/assets/images/whom.png?raw=true">
+        <div class="who-section">
+            <h1>CLIENTS</h1>
+            <img src="https://github.com/MohamedBoutaieb/SmartVisionAI/blob/main/assets/images/whom.png?raw=true">
+        </div>
     </div>
-    """,unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
