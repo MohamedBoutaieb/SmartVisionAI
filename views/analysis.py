@@ -34,10 +34,12 @@ def load_view():
         
         if st.button('Predict'):
             object_detection_image(img1, confThreshold, nmsThreshold)
+
 def object_detection_image(img1, confThreshold, nmsThreshold):
 
         my_bar = st.progress(0)
-        model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt',force_reload=True)
+        model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt',device='cpu')
+        model.to("cpu")
         model.conf = confThreshold/100
         model.iou = nmsThreshold/100
 
